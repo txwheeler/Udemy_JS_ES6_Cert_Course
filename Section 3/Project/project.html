@@ -1,0 +1,61 @@
+<!--
+	Create a program that prompts the user twice for
+numbers. Store those variables in variables called
+operand1 and operand2. Using mathematical
+operators, display the answers to the following
+questions:
+
+What is the sum of operand1 and operand2?
+
+What is the result if you subtract operand2 from
+operand1?
+
+What is the result if you multiple operand1 by
+operand2?
+Is operand1 equal to operand2?
+
+Is operand1 smaller than operand2?
+
+Can you divide Operand2 evenly in to operand1?
+-->
+
+<div id="out"></div>
+<script>
+	//var operand1 = 2;
+	//var operand2 = 4;
+
+	var operand1 = prompt('Provide number 1');
+	var operand2 = prompt('Provide number 2');
+
+	var output = "";
+
+	var num1 = parseInt(operand1);
+	var num2 = parseInt(operand2);
+
+	var addition = num1 + num2;
+	var subtraction = num2 - num1;
+	var multiply = num1 * num2;
+	var equal = 'Yes';
+	if(num1 != num2)
+		equal = 'No';
+	
+	var smaller = 'No';
+	if(num1 < num2);
+		smaller = 'Yes';
+	
+	var mod = num2 % num1;
+	var divideEven = 'No';
+	if(mod == 0)
+		divideEven = 'Yes';
+
+	output += 'Number 1: ' + num1 + '<br />';
+	output += 'Number 2: ' + num2 + '<br />';
+	output += 'Addition: ' + addition + '<br />';
+	output += 'Subtraction: ' + subtraction + '<br />';
+	output += 'Multiply: ' + multiply + '<br />';
+	output += 'Are they equal? ' + equal + '<br />';
+	output += 'Is ' + num1 + ' smaller than ' + num2 + '? ' + smaller + '<br />';
+	output += 'Does ' + num2 + ' divide evenly into ' + num1 + '? ' + divideEven + '<br />';
+
+	document.getElementById('out').innerHTML = output;
+</script>

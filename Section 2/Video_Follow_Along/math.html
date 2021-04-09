@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math</title>
+	</head>
+	<body>
+		<div id="out"></div>
+	</body>
+	<script>
+		var salaryByWeek = 1350;
+
+		var output = '';
+		output += 'Weekly Salary: $' + salaryByWeek + '<br/>';
+		var salaryByYear = salaryByWeek * 52;
+		output += 'Yearly Salary: $' + salaryByYear + '<br/>';
+		var monthlySalary = salaryByYear / 12;
+		output += 'Monthly Salary: $' + monthlySalary + '<br/>';
+
+		document.getElementById('out').innerHTML = output;
+	</script>
+</html>

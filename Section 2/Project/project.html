@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab #2</title>
+	</head>
+	<body>
+		<div id="out"></div>
+		<br/><br/>
+		<div id="out2"></div>
+		<script>
+			name1 = "Tom";
+			name2 = "Bob";
+			name3 = "Mary";
+			name4 = "Caitlyn";
+			name5 = "Red";
+			name6 = "Douglas";
+			name7 = "Judy";
+			name8 = "Susan";
+
+			var sep = prompt("Please enter a list separator.");
+			var out = "";
+			out += name1 + sep + name2 +  sep + name3 + sep + name4 + sep + name5 + sep + name6 + sep + name7 + sep + name8;    
+
+			document.getElementById('out').innerHTML = out;
+
+
+			var num = +prompt('Please enter a number');
+
+			//million ways to do it, based on samples in videos doing it this way also...tired of prompt...
+
+
+			var num2 = parseInt(num) + 10; 
+			var num3 = parseInt(num) + 20;
+			var num4 = parseInt(num) + 50;
+			var num5 = parseInt(num) + 1568;
+
+			out = '';
+			out += 'Your Number + 10: ' + num2 + '<br/>';
+			out += 'Your Number + 20: ' + num3 + '<br/>';
+			out += 'Your Number + 50: ' + num4 + '<br/>';
+			out += 'Your Number +  1568: ' + num5 + '<br/>';
+			document.getElementById('out2').innerHTML = out;
+		</script>
+	</body>
+</html>

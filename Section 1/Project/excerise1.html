@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Mad Lib Assignment</title>
+ 	</head>
+ 	<body>
+ 		<div id="output"></div>
+ 	</body>
+
+ 	<script>
+		var properName = prompt('Enter a proper name');
+		var properName2 = prompt("Enter a second proper name")
+		var verb = prompt('Enter a verb (past tense)');
+		var verb2 = prompt('Enter a second verb (past tense)');
+		var verb3 = prompt('Enter a third verb (past tense)');
+		var adj = prompt('Enter an adjective');
+		var adj2 = prompt('Enter a second adjective');
+		var adj3 = prompt('Enter a third adjective');
+
+		var out = properName + 'and ' + properName2 + ' ran up the hill.<br/>';
+		out += properName + ' went ' + verb + '<br/>';
+		out += 'While ' + properName2 + ' came ' + verb2 + '<br/>';
+		out += properName + ' and ' + properName2 + ' both ' + verb3 + ' back down the hill.<br/>';
+	   	out += 'And ' + adj2 + ' ' + properName2 + ' thought it was fun, <br/>';
+		out += 'But I am ' + adj + ' ' + properName + ' wept.<br/>';
+		out += 'And I guess it was just that ' + adj3 + ' kind of day!';
+
+		document.getElementById('output').innerHTML = out;
+   </script>
+</html>

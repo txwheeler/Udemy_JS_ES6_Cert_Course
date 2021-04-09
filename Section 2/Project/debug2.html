@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Debug #2</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<script>
+			var name = prompt("What is your name?");
+			var place = prompt("In which city or town do you live?");
+			var age = prompt("How old are you?");
+			var pets = prompt("Do you have any pets?");
+			var food = prompt("What is your favorite food?");
+			//there is no var for name, so making it the first prompt...line 8...
+			//orig line below... adding a break for style
+			//var out = "This is my friend " + name;
+			var out = "This is my friend " + name + "<br/>";
+			//orig line below...removing var and adding a break for style
+			//var out += name + " lives in " + place;
+			out += name + " lives in " + place + "<br/>";
+			//orig line below...removing var, adding a plus sign, and adding a break for style
+			//var out += name + “ is “ + age “ years old”;
+			out += name + " is " + age + " years old <br/>";
+			//orig line below...removing var, fixing the plus sign 
+			//var out += name + " likes to eat +" food;
+			out += name + " likes to eat " + food;
+			//orig line below...wrong id, innerHTML used wrong
+			//document.getElementById('out').innerHTML(out);
+			document.getElementById('output').innerHTML = out;
+		</script>
+	</body>
+</html>
