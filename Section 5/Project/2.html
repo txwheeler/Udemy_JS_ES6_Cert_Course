@@ -1,0 +1,29 @@
+<div id="output"></div>
+<script>
+/*
+
+DEBUG THIS CODE BELOW TO WORK
+
+var from = prompt('Where do you want to start counting?');
+var stop = parseInt(prompt('Where do you want to stop counting?'));
+
+for(var i = from; i < stop + 1; i++)
+{
+	document.getElementById('output').innerHTML += i + '<br/>';
+}
+*/
+
+	var from = parseInt(prompt('Where do you want to start counting?'));
+	var stop = parseInt(prompt('Where do you want to stop counting?'));
+
+	if(from < stop){
+		for(var i = from; i < stop; i++){
+			document.getElementById('output').innerHTML += i + '<br/>';
+		}
+	}else{
+		for(var i =stop; i < from; i++){
+			document.getElementById('output').innerHTML += i + '<br/>';
+		}		
+	}
+
+</script>

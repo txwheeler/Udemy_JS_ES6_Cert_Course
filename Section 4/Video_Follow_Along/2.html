@@ -1,0 +1,32 @@
+<div id="output">
+</div>
+
+<script>
+	var grade = 'x';
+	
+	switch(grade){
+		case 'A':
+		case 'a':
+			document.getElementById('output').innerHTML = 'Great Job';
+			break;
+		case 'B':
+		case 'b':
+			document.getElementById('output').innerHTML = 'Good Effort. You are almost there!';
+			break;
+		case 'C':
+		case 'c':
+			document.getElementById('output').innerHTML = 'Passing Grade.';
+			break;						
+		case 'D':
+		case 'd':
+			document.getElementById('output').innerHTML = 'D is for dumb.';
+			break;									
+		case 'F':
+		case 'f':
+			document.getElementById('output').innerHTML = 'Fail!';
+			break;	
+		default: 
+			document.getElementById('output').innerHTML = 'Unrecoginzed Grade'										
+	}
+
+</script>

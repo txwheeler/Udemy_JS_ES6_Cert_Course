@@ -1,0 +1,42 @@
+<div id="output"></div>
+<script>
+
+//pattern 1
+	var x = 10;
+	for(var i = 0; i <= x; i++){
+
+		for(var k = 0; k <= i; k++){
+			document.getElementById('output').innerHTML += '*';
+		}
+		document.getElementById('output').innerHTML += '<br>';
+	}
+
+	for(var i = x; i >= 0; i--){
+
+		for(var k = i; k >= 0; k--){
+			document.getElementById('output').innerHTML += '*';
+		}
+		document.getElementById('output').innerHTML += '<br>';
+	}
+
+	document.getElementById('output').innerHTML += '<br><br><br><br>';
+//pattern 2
+
+	var y = 10;
+	for(var i = 0; i <= y; i++){
+		document.getElementById('output').innerHTML += '*_*_*_*_*_*_*_*_<br>';
+	}
+
+	document.getElementById('output').innerHTML += '<br><br><br><br>';
+//pattern 3
+	var rows = parseInt(prompt('Enter the number of rows.'));
+	var cols = parseInt(prompt('Enter the number of cols.'));
+
+	for(var i = 0; i < rows; i++){
+		for(var k = 0; k < cols; k++){
+			document.getElementById('output').innerHTML += '*';
+		}
+		document.getElementById('output').innerHTML += '<br>';
+	}
+
+</script>

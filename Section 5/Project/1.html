@@ -1,0 +1,22 @@
+<div id="output"></div>
+<script>
+	//create a loop that starts counting at 100 and counts down to 0, displaying every number
+	//create a loop that counts to 0 to 1000 by 10s. so output 10, 20, 30,...1000
+
+
+	var x = 100; 
+	
+	while(x >= 0){
+		document.getElementById('output').innerHTML += ' x = ' + x + ' <br>';
+		x--;
+	}
+
+	document.getElementById('output').innerHTML += '<br><br><br>';
+
+	var y = 0;
+	while(y <= 1000){
+		document.getElementById('output').innerHTML += y + '<br>';
+		y = y + 10
+	}	
+
+</script>
