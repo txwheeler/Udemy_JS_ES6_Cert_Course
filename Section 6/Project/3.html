@@ -1,0 +1,73 @@
+<!--
+Consider the following code:
+<script>
+ var names = [];
+ var theName = “”;
+ while (theName != “XXX”)
+ {
+ theName = prompt(“Enter a name or XXX to Stop”);
+ if(theName != “XXX”){
+ names.push(theName);
+ }
+ }
+ for(var x = 0; x < names.length; x++)
+ {
+ alert(names[x]);
+ }
+</script>
+Using this code as a baseline, please write a program
+that asks the user to enter a list of GPA’s (and XXX to
+quit). Once the GPA’s are entered output the following
+information:
+A) The GPA’s in order from largest to smallest.
+B) The average of the GPA’s
+C) The highest and lowest GPA for the class
+D) A list of the outstanding GPA’s (Defined as GPA’s
+over 3.4).
+
+-->
+<div id="output"></div>
+<script>
+	var gpas = [];
+	var theGPA = "";
+	var out = "<h2>1. GPA's In Order from largest to smallest</h2>";
+	while (theGPA != "XXX"){
+		theGPA = prompt("Enter a GPA or XXX to Stop");
+	
+		if(theGPA != "XXX"){
+			gpas.push(parseFloat(theGPA));
+		}
+	}
+	//document.getElementById('output').innerHTML += out;
+	out += gpas.sort(function(a, b){
+		return b - a;
+	})
+	var total = 0;
+	var outstandingGPAS = [];
+	for(var x = 0; x < gpas.length; x++){
+		total += gpas[x];
+		if(gpas[x] > 3.4){
+			outstandingGPAS.push(gpas[x]);
+		}
+	}
+	console.log(total);
+	console.log(gpas.length)
+	var average = total / gpas.length;
+	out += '<h2>2. The Average of the GPAs</h2>';
+	out += 'Class Average GPA: ' + average;
+
+	out += '<h2>3. The highest and lowest GPA for the class</h2>';
+
+	highestGPA = Math.max(...gpas);
+	lowestGPA = Math.min(...gpas);
+
+	out += 'Highest GPA: ' + highestGPA + '<br>';
+	out += 'Lowest GPA: ' + lowestGPA + '<br>';
+
+	
+	out += '<h2>4. Outstanding GPAs Over 3.4</h2>';
+
+	out += 'Outstanding GPAs: ' + outstandingGPAS;
+
+	document.getElementById('output').innerHTML += out;
+</script>

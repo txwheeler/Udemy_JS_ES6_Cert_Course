@@ -1,0 +1,42 @@
+
+<!-- DEBUG THIS CODE BELOW-->
+<!--<div id=”output”></div>
+<script>
+
+var gpas = (3.4, 3.12, 3.333, 2.5, 1.9, 3.94, 2.1, 4, 3.11);
+
+var out = “<h2>Class GPAs</h2>”;
+var total = 0;
+var length = gpas.length;
+for(var i=0; i < length; i++)
+ {
+ var out += gpas[i];
+ out += “<br/>”;
+ total += gpas[1];
+ }
+
+var average += total/length;
+out += “Class Average GPA: “ + average;
+document.getElementById(‘output’).innerHTML = out;
+
+</script>-->
+
+<div id="output"></div>
+<script>
+
+	var gpas = [3.4, 3.12, 3.333, 2.5, 1.9, 3.94, 2.1, 4, 3.11];
+
+	var out = "<h2>Class GPAs</h2>";
+	var total = 0;
+	var length = gpas.length;
+	for(var i=0; i < length; i++){
+		out += gpas[i];
+		out += "<br/>";
+		total += gpas[i];
+	}
+
+	var average = total/length;
+	out += 'Class Average GPA: ' + average;
+	document.getElementById('output').innerHTML = out;
+
+</script>

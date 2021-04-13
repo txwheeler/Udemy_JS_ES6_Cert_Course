@@ -1,0 +1,31 @@
+<div id="output"></div>
+<script>
+	var computers = ['Apple', 'IBM', 'Commodore', 'TRS-80', 'Amiga'];
+	var family = new Array('Mark', 'Joan', 'Brett', 'Rick', 'Kerry');
+
+	document.getElementById('output').innerHTML = computers[0];
+	document.getElementById('output').innerHTML += '<br>' + family[2];
+
+	computers[0] = 'Mac';
+	document.getElementById('output').innerHTML += '<br>' + computers[0];
+
+	document.getElementById('output').innerHTML += '<br>' + family + '<br><br>';
+
+	var out = '';
+	for(var x = 0; x < computers.length; x++){
+		out += computers[x];
+		out += '<br>';
+		
+	}
+	document.getElementById('output').innerHTML += '<br>' + out + '<br><br>';
+
+
+	document.getElementById('output').innerHTML += family.sort() + '<br>';
+
+	family.push('Carol');
+
+	document.getElementById('output').innerHTML += family.sort() + '<br><br>';
+
+	computers.pop();
+	document.getElementById('output').innerHTML += '<p>' + computers.sort() + '</p>';
+</script>

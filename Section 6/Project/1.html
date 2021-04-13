@@ -1,0 +1,50 @@
+<div id="output"></div>
+<script>
+/*
+	First define an array that includes the names of five
+	or six family members or friends. Using the numerical
+	indexes output each member of the array. Then try
+	the following:
+	1. Access an array that doesn’t exist, for example,
+	family[44].
+	2. Access the array by name without an index like
+	this, family.
+	Make a note of what happens in each case.
+*/
+
+
+	var family = ['Brent', 'Brett', 'Blaine', 'Gary', 'Beth', 'Liz'];
+
+	document.getElementById('output').innerHTML += family[0] + '<br>';
+	document.getElementById('output').innerHTML += family[1] + '<br>';
+	document.getElementById('output').innerHTML += family[2] + '<br>';
+	document.getElementById('output').innerHTML += family[3] + '<br>';
+	document.getElementById('output').innerHTML += family[4] + '<br>';
+	document.getElementById('output').innerHTML += family[5] + '<br>';
+
+	document.getElementById('output').innerHTML += '<br>====================<br><br>';
+	document.getElementById('output').innerHTML += 'This should be undefined for family[44] = ';
+	document.getElementById('output').innerHTML += family[44] + '<br>';
+
+	document.getElementById('output').innerHTML += '<br>====================<br><br>';
+	var out = '';
+	for(var i = 0; i < family.length; i++){
+		out+= family[i] + '<br>';
+	}
+	document.getElementById('output').innerHTML += out;
+
+	document.getElementById('output').innerHTML += '<br>====================<br><br>';
+
+	document.getElementById('output').innerHTML += family;
+
+
+	/*
+		Using the array you previously created, create a loop
+		that loops through each member of the array and
+		outputs it to an alert() box.
+	*/
+	for(var i = 0; i < family.length; i++){
+		alert(family[i]);
+	}
+
+</script>
