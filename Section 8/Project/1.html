@@ -1,0 +1,73 @@
+<!-- 
+
+Create a calculator. You will prompt the user three
+times. For the first prompt, ask the user for the first
+number to be calculated. For the second prompt, ask
+the user for the second number to be calculated. On
+the third prompt ask for an operation ( + , - , * , / , %).
+Once the user entries to the prompts are stored,
+perform the operation requested and output the
+entire equation. For example if the user enters 4, 5
+and + output “9 + 4 = 13”
+One additional caveat: The results of the calculation
+must be shown using a function called showResult(). 
+
+-->
+
+<div id="output"></div>
+<script>
+
+	const FIRSTASK = 'Please enter a number.';
+	const SECONDASK = 'Please enter a number.';
+	const THIRDASK = 'Please enter an operation ( +, -, *, /, %)';
+
+	let x;
+	let y;
+	let operand; 
+	let answer;
+	let textAnswer;
+	let out = '';
+
+
+	function askUser(){
+		x = parseInt(prompt(FIRSTASK));
+		y = parseInt(prompt(SECONDASK));
+		operand = prompt(THIRDASK);
+	}
+
+	function doCalculations(a, b, math){
+		let total = 0;
+		if(math == '+'){
+			total = a + b;
+			textAnswer = a + '+' + b + '= ' + total;
+		}else if(math == '-'){
+			total = b - a;
+			textAnswer = b + '-' + a + '= ' + total;
+		}else if(math == '*'){
+			total = a * b;
+			textAnswer = a + '*' + b + '= ' + total;
+		}else if(math == '/'){
+			total = b / a;
+			textAnswer = b + '/' + a + '= ' + total;
+		}else if(math == '%'){
+			total = b % a;
+			textAnswer = b + '%' + a + '= ' + total;
+		}
+
+		return total;
+	}
+
+	function showResults(answer){
+		out += 'First Number: ' + x + '<br>';
+		out += 'Second Number: ' + y + '<br>';
+		out += 'Operand: ' + operand + '<br>';
+		out += '========================<br><br><br>';
+		out += textAnswer;
+		document.getElementById('output').innerHTML += out;
+	}
+
+	askUser();
+	answer = doCalculations(x,y,operand);
+	showResults(answer);
+
+</script>

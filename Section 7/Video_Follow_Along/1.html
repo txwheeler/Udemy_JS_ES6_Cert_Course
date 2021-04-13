@@ -1,0 +1,30 @@
+<div id="output"></div>
+<script>
+	function greetPeople(){
+		alert('Greetings, People!');
+	}
+	
+	function personalGreetings(name){
+		out += 'Greetings ' +  name + '<br>';
+		document.getElementById('output').innerHTML = out;
+	}
+	
+	function howOld(name, age){
+		alert(name + ' is ' + age + ' years old.');
+	}
+
+	//greetPeople();
+	//greetPeople();
+
+
+	var out = '';
+
+	personalGreetings('Bob');
+	personalGreetings('Mary');
+	personalGreetings('Horace');
+
+
+
+	howOld('Mark', 33);
+	howOld('Beth', 22);
+</script>
