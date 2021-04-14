@@ -1,0 +1,17 @@
+<div id="output"></div>
+<script>
+	//anonymous functions
+/*
+	let greetings = function() {return "Greetings Stranger"};
+	alert(greetings());
+*/
+
+
+	/*let greetings = function(name) {return "Greetings " + name};
+	alert(greetings('John'));
+	*/
+
+	let greetings = new Function("name", "return ('Greetings ' + name)");
+	var message = greetings('Brett');
+	alert(message)
+</script>

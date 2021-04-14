@@ -1,0 +1,25 @@
+<div id="output"></div>
+<script>
+
+	/*function greetings(username){
+		let message = '<h1>Greetings ' + username + '!</h1>';
+		message += 'It\'s going to be a great day';
+		//document.getElementById('output').innerHTML = message;
+		return message;
+	}
+
+	//function call
+	let myMessage = greetings('Mark');
+	document.getElementById('output').innerHTML = myMessage;
+	*/
+
+	//default params x=1, y=2
+	function multiply(x=1,y=2){
+		return x * y;
+	}
+
+	alert(multiply());
+	alert(multiply(9,8));
+	//10 gets assigned to y
+	alert(multiply(10))
+</script>

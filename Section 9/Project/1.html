@@ -1,0 +1,34 @@
+<!--
+Create an HTML5 document from scratch that is
+correctly formed and coded that shows 5-10 items on
+your to-do list. There should only be a div element in
+your properly formed HTML. You’ll add the output to
+the <div> using Javascript.
+Store your to-do items in a single array of string
+values called toDoList.
+The output should include an h1 that contains the
+text TO-DO: which is written by using a function
+called todo . Add your individual to-do items to the
+div from a single function called addTodos.
+Each to-do item should be inside an individual p
+element in the HTML.
+-->
+<div id="output"></div>
+<script>
+	const TODOHEADER = '<h1>TO-DO:</h1>';
+
+	let toDoList = ['Clean Office', 'Do Homework', 'Finish Udemy Course', 'Walk the dog', 'Take out the trash'];
+
+	let todo = (msg) => (msg);
+
+	document.getElementById('output').innerHTML += todo(TODOHEADER);
+
+	function addToDos(){
+		for(var i = 0; i < toDoList.length; i++){
+			document.getElementById('output').innerHTML += '<p>' + toDoList[i] + '</p>' 
+		}
+	}
+
+	addToDos()
+
+</script>
