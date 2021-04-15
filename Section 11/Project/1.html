@@ -1,0 +1,25 @@
+<!--
+You are, perhaps, familiar with the game Bingo, where
+each participant is given a card of numbers broken
+into columns labeled B, I, N, G, and O.
+You are going to create a BINGO caller program
+which automatically calls a game of BINGO. All 
+the bingo numbers will be stored in a set called
+numbers. For your convenience, you can copy the
+code to create the set here:
+https://gist.github.com/
+mlassoff/85c64c18a901d2c7fa2593c4dc03eee0
+Your program should have two buttons. The first
+button displays a random member of the set to call.
+That number should not be called again until the
+game is reset. Each time the first button is pressed a
+new BINGO number is displayed. The second button,
+used when someone calls BINGO, displays all the
+numbers that have been called so far for verification
+and resets the game allowing you to play again.
+-->
+<div id="output"></div>
+
+<button id="nextBingoNumber" onclick="setupBingo()"></button>
+<button id="bingoResults" onclick="showBingoResults()">Show Bingo Results</button>
+<script src="1.js"></script>
