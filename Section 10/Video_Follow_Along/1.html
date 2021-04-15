@@ -1,0 +1,41 @@
+<div id="output"></div>
+<script>
+
+	let team = new Map(); 
+
+	team.set('pitcher', 'David Cone');
+	team.set('catcher', 'Jorge Posada');
+	team.set('right_field', 'Dave Winfield');
+
+	//alert(team.get('right_field'));
+
+	let music = new Map();
+	music.set('Journey', 'Faithfully').set('REO Speedwagon', 'Keep on Rolling').set('Scandal', 'The Warrior');
+	//alert(music.get('Scandal'));
+
+	let family = new Map([
+		['mother', 'Joan']
+	]);
+
+	console.log(family)
+	//alert(family.get('sil'));
+	//clean the map
+	//family.clear();
+	
+	//alert(family.values());
+	for(let r of family.entries()){
+		//alert(r)
+		//alert(r[0] + ': ' + r[1])
+	}
+
+	for(let r of family.keys()){
+		alert(r)
+		//alert(r[0] + ': ' + r[1])
+	}
+
+	for(let r of family.values()){
+		alert(r)
+		//alert(r[0] + ': ' + r[1])
+	}
+
+</script>

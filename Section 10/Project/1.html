@@ -1,0 +1,54 @@
+<!--
+t’s clean up time at Camp Whack-a-Doo. The problem
+is the campers never know which chores are theirs.
+You have been tasked with creating a JavaScript
+program to store the campers and assign tasks. The
+data should be stored in a map.
+When the program starts the user should be
+instructed to enter a campers name, and then a task.
+The tasks should be limited to the following:
+Front Room Sweep
+Back Room Sweep
+Outside Grounds
+Clean Toilet
+Clean Sink
+Trash Patrol and Supplies
+The campers’ names and assignments should be
+stored in a map with the task being the key and the
+camper’s name the value.
+The interface should include a button that, when
+clicked lists all the campers names and their cleanup assignments.
+-->
+
+<div id="mainData">
+	<table>
+		<tr>
+			<td>Camper Name:</td>
+			<td><input type="text" id="camperName"></td>
+		</tr>
+		<tr>
+			<td>Camp Task:</td>
+			<td>
+				<select id="campTasks">
+					<option value="Front Room Swep">Front Room Sweep</option>
+					<option value="Back Room Swep">Back Room Sweep</option>
+					<option value="Outside Grounds">Outside Grounds</option>
+					<option value="Clean Toilet">Clean Toilet</option>
+					<option value="Clean Sink">Clean Sink</option>
+					<option value="Trash Patrol And Supplies">Trash Patrol and Supplies</option>
+				</select>
+			</td>
+		</tr>
+	</table>	
+</div>
+
+<button id="Add" onclick="addCamper();">
+	Add Camper
+</button>
+
+
+<button id="showAll" onclick="showAll();">
+	Show 
+</button>
+<div id="output"></div>
+<script src="1.js"></script>
