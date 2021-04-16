@@ -1,0 +1,95 @@
+<!--
+	Create a program that prompts the user for the
+following information and stores each response in a
+unique variable (You may use a form or the prompt()
+command).
+• A piece of Clothing ( A )
+• Part of Body ( B )
+• Part of Body ( C )
+• Verb Base Form ( D )
+• Part of Body ( E )
+• Verb Base Form ( F )
+• Noun Plural (G)
+• Noun Plural ( H )
+• Verb Base Form ( I )
+
+Using String Interpolation and the Multiline String
+techniques taught in this section output instructions
+for “Flossing” using the words entered by the user:
+How to do The Floss Dance
+1 ) Put on some music
+2 ) Put on a *A* ( optional )
+3 ) Stand with your *B* ever so slightly bent
+4 ) Put your hands in fists
+5 ) Place your *C*, relaxed, at the side of your body 
+JAVASCRIPT FOR APPLICATION DEVELOPMENT PAGE 6
+6 ) Begin to *D* your *E* left and right around your torso in the
+opposite direction to your hips
+7 ) Keep doing it and increase speed and *F* *G* occasionally for
+effect
+After building confidence, you can also *H* *I* with your arms if
+desired, but this is not mandatory.
+-->
+
+<table>
+	<tr>
+		<td>A Piece of Clothing:</td>
+		<td>
+			<input type="text" id="clothing" style="width:200px;" value="Shirt">
+		</td>
+	</tr>
+	<tr>
+		<td>Part of the Body:</td>
+		<td>
+			<input type="text" id="body" style="width:200px;" value="Arm">
+		</td>
+	</tr>
+	<tr>
+		<td>Part of the Body:</td>
+		<td>
+			<input type="text" id="body2" style="width:200px;" value="Leg">
+		</td>
+	</tr>
+	<tr>
+		<td>Verb Base Form:</td>
+		<td>
+			<input type="text" id="verb" style="width:200px;" value="Run">
+		</td>
+	</tr>
+	<tr>
+		<td>Part of the Body:</td>
+		<td>
+			<input type="text" id="body3" style="width:200px;" value="Foot">
+		</td>
+	</tr>
+	<tr>
+		<td>Verb Base Form:</td>
+		<td>
+			<input type="text" id="verb2" style="width:200px;" value="Sleep">
+		</td>
+	</tr>
+	<tr>
+		<td>Noun Plural:</td>
+		<td>
+			<input type="text" id="noun" style="width:200px;" value="Chicago">
+		</td>
+	</tr>
+	<tr>
+		<td>Noun Plural:</td>
+		<td>
+			<input type="text" id="noun2" style="width:200px;" value="Portland">
+		</td>
+	</tr>
+	<tr>
+		<td>Verb Base Form:</td>
+		<td>
+			<input type="text" id="verb3" style="width:200px;" value="Swim">
+		</td>
+	</tr>
+</table>
+<button id="displayOutput" onclick="displayOutput();">
+	Display The Floss Dance
+</button>
+<br><br>
+<div id="output"></div>
+<script src="1.js"></script>
