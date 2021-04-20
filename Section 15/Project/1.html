@@ -1,0 +1,55 @@
+<!--
+
+The “Lorem Picsum” API sends random images,
+similar to the cat API above. It does have a few
+more features. You can get a random picture from
+the API using the following URL: https://picsum.
+photos/200/300/?random.
+In the URL 200 represents the width of the image
+requested and 300 the height.
+For your final project, implement this API using a
+promise, however, take the width and height from
+data entered by the user in a form. Your interface
+should have a field for the user to enter a width, a
+field to enter the height and a button that retrieves
+and displays a photo of the indicated size.
+Once you have this working view the API instructions
+at https://picsum.photos/ and add to your form a
+checkbox that will request a grayscale image when
+checked.
+Once you are able to request grayscale or color
+images of a specific size and display them, turn in
+your code according to the directions below.
+	
+-->
+
+<table>
+	<tr>
+		<td align="right">Width:</td>
+		<td>
+			<input type="text" id="width" value="" style="width:100px">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Height:</td>
+		<td>
+			<input type="text" id="height" value="" style="width:100px">
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Gray Scale:</td>
+		<td>
+			<input type="checkbox" id="grayScale">
+			
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="2">
+			<button onclick="getImage()">Get Image</button>
+		</td>
+	</tr>
+</table>
+
+
+<div id="output"></div>
+<script src="1.js"></script>
